@@ -1,0 +1,182 @@
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.heroBadge {
+  display: inline-block;
+  background: #fff3bf;
+  color: #e67700;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ffe066;
+}
+
+.heroTitulo {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.15;
+  color: #1a1a1a;
+  margin: 0 0 1.2rem;
+}
+
+.destaque {
+  color: #ff6b6b;
+  position: relative;
+}
+
+.heroDesc {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.btnPrimario {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.btnPrimario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.45);
+}
+
+.btnSecundario {
+  background: white;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  padding: 0.9rem 2.2rem;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.btnSecundario:hover {
+  background: #fff5f5;
+  transform: translateY(-3px);
+}
+
+.stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat strong {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ff6b6b;
+}
+
+.stat span {
+  font-size: 0.78rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background: #eee;
+}
+
+/* Seção */
+.secao {
+  padding: 3rem 0 2rem;
+}
+
+.secaoTitulo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+.secaoDesc {
+  text-align: center;
+  color: #888;
+  margin: 0 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+/* CTA */
+.cta {
+  padding: 2rem 0;
+}
+
+.ctaBox {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.ctaTitulo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0 0 0.8rem;
+}
+
+.ctaDesc {
+  margin: 0 0 2rem;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.ctaBox .btnPrimario {
+  background: white;
+  color: #ff6b6b;
+}
+
+.ctaBox .btnPrimario:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}

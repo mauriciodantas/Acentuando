@@ -1,0 +1,61 @@
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 0 2rem;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d2d2d;
+  user-select: none;
+}
+
+.logoIcone {
+  font-size: 1.8rem;
+}
+
+.destaque {
+  color: #ff6b6b;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navBtn {
+  background: none;
+  border: 2px solid transparent;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navBtn:hover {
+  color: #ff6b6b;
+  background: #fff0f0;
+  border-color: #ffcece;
+}
+
+.navBtn.ativo {
+  background: #ff6b6b;
+  color: white;
+  border-color: #ff6b6b;
+}

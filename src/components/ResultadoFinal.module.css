@@ -1,0 +1,99 @@
+.container {
+  text-align: center;
+  padding: 2rem 1rem;
+  animation: entrar 0.5s ease;
+}
+
+@keyframes entrar {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.emoji {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0 0 0.5rem;
+}
+
+.mensagem {
+  color: #666;
+  font-size: 1rem;
+  margin: 0 0 2rem;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.placar {
+  background: #f8f8f8;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  min-width: 180px;
+}
+
+.numero {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.total {
+  font-size: 1.8rem;
+  color: #aaa;
+}
+
+.percentual {
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+.acoes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimario {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.btnPrimario:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.btnSecundario {
+  background: white;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  padding: 0.9rem 2rem;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.btnSecundario:hover {
+  background: #fff5f5;
+  transform: translateY(-2px);
+}

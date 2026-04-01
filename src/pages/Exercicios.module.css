@@ -1,0 +1,110 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dicaWrapper {
+  margin-bottom: 1.2rem;
+}
+
+.dica {
+  background: #fff3bf;
+  color: #855800;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 20px;
+  border: 1px solid #ffe066;
+}
+
+.pergunta {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem;
+  line-height: 1.3;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Feedback */
+.feedback {
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  animation: deslizar 0.3s ease;
+}
+
+@keyframes deslizar {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.feedbackCerto {
+  background: #ebfbee;
+  border: 2px solid #8ce99a;
+}
+
+.feedbackErrado {
+  background: #fff0f0;
+  border: 2px solid #ffa8a8;
+}
+
+.feedbackHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feedbackIcone {
+  font-size: 1.4rem;
+}
+
+.feedbackCerto strong {
+  color: #2f9e44;
+  font-size: 1.1rem;
+}
+
+.feedbackErrado strong {
+  color: #e03131;
+  font-size: 1.1rem;
+}
+
+.explicacao {
+  font-size: 0.92rem;
+  color: #555;
+  margin: 0 0 1.2rem;
+  line-height: 1.5;
+}
+
+.btnProxima {
+  width: 100%;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.btnProxima:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}

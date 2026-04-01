@@ -1,0 +1,70 @@
+.botao {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  border: 2px solid #e8e8e8;
+  background: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  text-align: left;
+  font-family: inherit;
+}
+
+.botao:not(:disabled):hover {
+  border-color: #ff6b6b;
+  background: #fff5f5;
+  color: #ff6b6b;
+  transform: scale(1.02);
+}
+
+.texto {
+  flex: 1;
+}
+
+.icone {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.correta {
+  border-color: #51cf66;
+  background: #ebfbee;
+  color: #2f9e44;
+  cursor: default;
+  animation: pulsoVerde 0.4s ease;
+}
+
+.errada {
+  border-color: #ff6b6b;
+  background: #fff0f0;
+  color: #e03131;
+  cursor: default;
+  animation: balanco 0.4s ease;
+}
+
+.correta-nao-selecionada {
+  border-color: #51cf66;
+  background: #f0fff4;
+  color: #2f9e44;
+  cursor: default;
+  opacity: 0.8;
+}
+
+@keyframes pulsoVerde {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+@keyframes balanco {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
